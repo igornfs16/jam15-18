@@ -34,7 +34,7 @@ public class PlayerInput : MonoBehaviour
 
         if (Input.GetKeyDown(KeyCode.A) || Input.GetKeyDown(KeyCode.LeftArrow))
         {
-            _attack.DropBomb();
+            //_attack.DropBomb();
         }
 
         if (Input.GetKeyDown(KeyCode.Space))
