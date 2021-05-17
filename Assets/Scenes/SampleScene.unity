@@ -443,7 +443,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4792296990418494, guid: 0310b8628b5599c4295215fedba1a232, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 1.65
+      value: 2.34
       objectReference: {fileID: 0}
     - target: {fileID: 4792296990418494, guid: 0310b8628b5599c4295215fedba1a232, type: 3}
       propertyPath: m_LocalPosition.z
@@ -477,6 +477,30 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+<<<<<<< Updated upstream
+=======
+    - target: {fileID: 198464213672787702, guid: 0310b8628b5599c4295215fedba1a232,
+        type: 3}
+      propertyPath: TriggerModule.collisionShape0
+      value: 
+      objectReference: {fileID: 4895811678675997621, guid: c36b07ebb7217dd448c8fe5796a2ceed,
+        type: 3}
+    - target: {fileID: 1231312523094129446, guid: 0310b8628b5599c4295215fedba1a232,
+        type: 3}
+      propertyPath: m_Name
+      value: DamageTrigger
+      objectReference: {fileID: 0}
+    - target: {fileID: 6496162473862419233, guid: 0310b8628b5599c4295215fedba1a232,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6496162473862419233, guid: 0310b8628b5599c4295215fedba1a232,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0.99
+      objectReference: {fileID: 0}
+>>>>>>> Stashed changes
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 0310b8628b5599c4295215fedba1a232, type: 3}
 --- !u!1 &658467038

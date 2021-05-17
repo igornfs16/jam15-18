@@ -9,6 +9,8 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4939519031479090423}
+  - component: {fileID: 1876457546021814667}
+  - component: {fileID: 5310003229406123107}
   m_Layer: 0
   m_Name: Bike
   m_TagString: Untagged
@@ -31,6 +33,35 @@ Transform:
   m_Father: {fileID: 4895811678675997621}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!54 &1876457546021814667
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3207897463169414933}
+  serializedVersion: 2
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: 0.05
+  m_UseGravity: 1
+  m_IsKinematic: 0
+  m_Interpolate: 0
+  m_Constraints: 122
+  m_CollisionDetection: 0
+--- !u!65 &5310003229406123107
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3207897463169414933}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1, y: 1, z: 1}
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!199 &8752638258649657467
 ParticleSystemRenderer:
   serializedVersion: 6
@@ -166,8 +197,9 @@ GameObject:
   - component: {fileID: 4895811678675997621}
   - component: {fileID: 5040197534536798751}
   - component: {fileID: 197668977131229136}
-  - component: {fileID: 415448098678911348}
-  - component: {fileID: 7275905704470012360}
+  - component: {fileID: 4820668149879754580}
+  - component: {fileID: 6778816215117706958}
+  - component: {fileID: 4690893418451998961}
   m_Layer: 0
   m_Name: Car
   m_TagString: Untagged
@@ -183,7 +215,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 8267971418783710174}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: -0.03, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 6300435699130014075}
@@ -207,6 +239,7 @@ MonoBehaviour:
   _currentObject: {fileID: 6030914212875506174}
   _targetObject: {fileID: 3207897463169414933}
   _replaceEffect: {fileID: 1157579771811645373}
+  _boxCollider: {fileID: 6778816215117706958}
 --- !u!114 &197668977131229136
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -220,7 +253,19 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _health: 2
---- !u!65 &415448098678911348
+--- !u!114 &4820668149879754580
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8267971418783710174}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9c932e8ceb1562842b42adcc007163a2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!65 &6778816215117706958
 BoxCollider:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -231,9 +276,9 @@ BoxCollider:
   m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 4, y: 2.5, z: 2}
-  m_Center: {x: -2, y: 2, z: 0}
---- !u!54 &7275905704470012360
+  m_Size: {x: 10.292912, y: 3.7327614, z: 4.034417}
+  m_Center: {x: -1.6274228, y: 1.3663807, z: 0.7925359}
+--- !u!54 &4690893418451998961
 Rigidbody:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -244,10 +289,10 @@ Rigidbody:
   m_Mass: 1
   m_Drag: 0
   m_AngularDrag: 0.05
-  m_UseGravity: 1
-  m_IsKinematic: 1
+  m_UseGravity: 0
+  m_IsKinematic: 0
   m_Interpolate: 0
-  m_Constraints: 126
+  m_Constraints: 0
   m_CollisionDetection: 0
 --- !u!1001 &4959691957780115499
 PrefabInstance:
@@ -330,12 +375,27 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 198284541963469816, guid: 779aa8c25fbd0e1488637639c9fff976,
         type: 3}
+      propertyPath: looping
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 198284541963469816, guid: 779aa8c25fbd0e1488637639c9fff976,
+        type: 3}
       propertyPath: playOnAwake
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 198602024190292886, guid: 779aa8c25fbd0e1488637639c9fff976,
         type: 3}
+      propertyPath: looping
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 198602024190292886, guid: 779aa8c25fbd0e1488637639c9fff976,
+        type: 3}
       propertyPath: playOnAwake
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 198679353919739006, guid: 779aa8c25fbd0e1488637639c9fff976,
+        type: 3}
+      propertyPath: looping
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 198679353919739006, guid: 779aa8c25fbd0e1488637639c9fff976,
