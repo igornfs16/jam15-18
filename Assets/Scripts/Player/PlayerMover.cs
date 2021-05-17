@@ -54,4 +54,9 @@ public class PlayerMover : MonoBehaviour
     {
         _rigidbody.AddForce(Vector3.up * _jumpForce, ForceMode.Impulse);
     }
+
+    public float CurrentSpeed()
+    {
+        return _speed;
+    }
 }
