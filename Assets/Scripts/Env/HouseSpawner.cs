@@ -36,12 +36,13 @@ public class HouseSpawner : MonoBehaviour
         {
             for (int i = 0; i <= _linesCount; i++)
             {
-                _currentX += _houseOffset + Random.Range(0, _randomizeHouseOffset);
+                _currentX += Random.Range(-_randomizeHouseOffset, _randomizeHouseOffset);
                 _currentZ += _distanceBetweenLines + Random.Range(0, _randomizeHouseOffset); 
                 _currentSpawnPoint = new Vector3(_currentX, 0, _startSpawnPoint.position.z + _currentZ);
                 SpawnHouse(_currentSpawnPoint);
             }
             _currentZ = _startSpawnPoint.position.z;
+            _currentX += _houseOffset;
         }
     }
 
@@ -53,12 +54,13 @@ public class HouseSpawner : MonoBehaviour
         {
             for (int i=0;i<=_linesCount;i++)
             {
-                _currentX += _houseOffset + Random.Range(0, _randomizeHouseOffset);
-                _currentZ += _distanceBetweenLines;
-                _currentSpawnPoint = new Vector3(_currentX, 0,_startSpawnPoint.position.z + _currentZ);
+                _currentX += Random.Range(-_randomizeHouseOffset, _randomizeHouseOffset);
+                _currentZ += _distanceBetweenLines + Random.Range(0, _randomizeHouseOffset);
+                _currentSpawnPoint = new Vector3(_currentX, 0, _startSpawnPoint.position.z + _currentZ);
                 SpawnHouse(_currentSpawnPoint);
             }
         _currentZ = _startSpawnPoint.position.z;
+        _currentX += _houseOffset;
         _currentDistance = 0;
         }
     }

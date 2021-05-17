@@ -15,7 +15,7 @@ public class Enemy : MonoBehaviour
     public void ApplyDamage(int damage)
     {
         _health -= damage;
-        if (_health < 0)
+        if (_health <= 0)
             _target.ReplaceEnemy();
     }
 }
