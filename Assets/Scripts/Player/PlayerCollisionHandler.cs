@@ -13,9 +13,9 @@ public class PlayerCollisionHandler : MonoBehaviour
 
     private void OnTriggerEnter(Collider other)
     {
-        if (other.TryGetComponent(out EnergyStrike energyStrike))
-            ;
-        else
+
+        if (other.TryGetComponent(out Enemy enemy))
+
             _player.Die();
     }
 }

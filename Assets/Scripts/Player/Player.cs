@@ -4,8 +4,15 @@ using UnityEngine;
 
 public class Player : MonoBehaviour
 {
-    public void Die()
+
+    private void Update()
+
     {
         Time.timeScale = 0;
+    }
+
+    public void Die()
+    { 
+    
     }
 }

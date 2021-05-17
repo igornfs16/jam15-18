@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 2145204222273663806}
   - component: {fileID: 113574108826774710}
   - component: {fileID: 7773528875001451218}
-  - component: {fileID: -5244359614379413675}
+  - component: {fileID: 341625048948833237}
   m_Layer: 0
   m_Name: EnergyStrike
   m_TagString: Untagged
@@ -44,7 +44,9 @@ SphereCollider:
   m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
-  m_Radius: 0.25
+
+  m_Radius: 3
+
   m_Center: {x: 0, y: 0, z: 0}
 --- !u!54 &7773528875001451218
 Rigidbody:
@@ -62,7 +64,9 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
---- !u!114 &-5244359614379413675
+
+--- !u!114 &341625048948833237
+
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -71,6 +75,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 7550224312104484936}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 3489f0468dbfef445945cb7c4dfbfbea, type: 3}
+  m_Script: {fileID: 11500000, guid: 32935e08f0a74024abfa0b8524f313b3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _damage: 3
