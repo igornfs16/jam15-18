@@ -1466,11 +1466,11 @@ MonoBehaviour:
   - {fileID: 100000, guid: 914f247fd2928454191bbfea744148d1, type: 3}
   - {fileID: 100000, guid: 8eaab01bd7cdd4b4e80fef81d0e3ae47, type: 3}
   _startSpawnPoint: {fileID: 1969153564}
-  _linesCount: 5
+  _linesCount: 12
   _startRaws: 36
-  _houseOffset: 5.09
-  _randomizeHouseOffset: 2.91
-  _distanceBetweenLines: 5.33
+  _houseOffset: 9.68
+  _randomizeHouseOffset: 5.44
+  _distanceBetweenLines: 6.85
   _spawnDistance: 40
   _ttlHouse: 40
   _playerMover: {fileID: 934292542}
