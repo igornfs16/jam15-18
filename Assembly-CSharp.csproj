@@ -74,13 +74,12 @@
     <Compile Include="Assets\Scripts\Player\Player.cs" />
     <Compile Include="Assets\Scripts\Player\PlayerAnimationSwitcher.cs" />
     <Compile Include="Assets\Scripts\Player\PlayerAttack.cs" />
+    <Compile Include="Assets\Scripts\Player\PlayerCollisionHandler.cs" />
     <Compile Include="Assets\Scripts\Player\PlayerInput.cs" />
     <Compile Include="Assets\Scripts\Player\PlayerMover.cs" />
     <Compile Include="Assets\Scripts\PlayerTracker.cs" />
     <Compile Include="Assets\Scripts\UI\Button.cs" />
-    <Compile Include="Assets\Scripts\Weapon\Bomb.cs" />
-    <Compile Include="Assets\Scripts\Weapon\Flash.cs" />
-    <Compile Include="Assets\Scripts\Weapon\Weapon.cs" />
+    <Compile Include="Assets\Scripts\Weapon\EnergyStrike.cs" />
     <None Include="Assets\DownloadedAssets\Toon Gas Station\ToonShading\Shaders\ToonBasicOutline.shader" />
     <None Include="Assets\DownloadedAssets\Toon Gas Station\ToonShading\Shaders\ToonBasic.shader" />
     <None Include="Assets\DownloadedAssets\Toon Gas Station\ToonShading\Shaders\ToonLit.shader" />

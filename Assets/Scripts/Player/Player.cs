@@ -4,11 +4,8 @@ using UnityEngine;
 
 public class Player : MonoBehaviour
 {
-    [SerializeField] private float _health;
-    [SerializeField] private List<Weapon> _weapon;
-
-    private void Update()
+    public void Die()
     {
-        
+        Time.timeScale = 0;
     }
 }
