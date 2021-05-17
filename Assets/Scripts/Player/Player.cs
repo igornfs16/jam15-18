@@ -6,8 +6,9 @@ public class Player : MonoBehaviour
 {
 
     private void Update()
+
     {
-        
+        Time.timeScale = 0;
     }
 
     public void Die()

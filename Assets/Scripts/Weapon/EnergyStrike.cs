@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class EnergyStrike : MonoBehaviour
 {
+
     [SerializeField] private int _damage;
     
     private Vector3 _startPosition;
