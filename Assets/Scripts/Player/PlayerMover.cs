@@ -35,7 +35,7 @@ public class PlayerMover : MonoBehaviour
     }
     private void MoveByZ(float direction)
     {
-        _player.transform.position = new Vector3(_player.transform.position.x, _player.transform.position.y, _player.transform.position.z + _sideStepSize * direction);
+       _player.transform.position = new Vector3(_player.transform.position.x, _player.transform.position.y, _player.transform.position.z + _sideStepSize * direction);
     }
 
     public void MoveByZUp()
@@ -53,5 +53,10 @@ public class PlayerMover : MonoBehaviour
     public void Jump()
     {
         _rigidbody.AddForce(Vector3.up * _jumpForce, ForceMode.Impulse);
+    }
+
+    public float CurrentSpeed()
+    {
+        return _speed;
     }
 }

@@ -15,7 +15,13 @@ public class Enemy : MonoBehaviour
     public void ApplyDamage(int damage)
     {
         _health -= damage;
-        if (_health <= 0)
+        if (_health < 0)
             _target.ReplaceEnemy();
+    }
+
+    private void OnTriggerEnter(Collider other)
+    {
+        if(other.TryGetComponent(out EnergyStrike energyStrike))
+            ApplyDamage(energyStrike.Damage);
     }
 }
