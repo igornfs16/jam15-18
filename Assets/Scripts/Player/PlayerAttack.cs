@@ -4,15 +4,10 @@ using UnityEngine;
 
 public class PlayerAttack : MonoBehaviour
 {
-
     [SerializeField] private float _dropPower;
-
-    [SerializeField] private GameObject _bombPrefab;
-    [SerializeField] private float _bombCooldownTime;
-    [SerializeField] private float _dropPower;
-    [SerializeField] private Transform _bombSpawnPoint;
-
-
+    [SerializeField] private ParticleSystem _flashStrike;
+    [SerializeField] private GameObject _energyStrikePrefab;
+    [SerializeField] private Transform _energyStrikeSpawnPoint;
 
     private Rigidbody _energyStrikeRigidBody;
 
@@ -29,5 +24,4 @@ public class PlayerAttack : MonoBehaviour
         _energyStrikeRigidBody.AddForce(Vector3.right * _dropPower);
         _flashStrike.Play();
     }
-
 }
